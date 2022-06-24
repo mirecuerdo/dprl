@@ -1,0 +1,955 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  
+
+  
+  <link rel="shortcut icon" href="logodarwin.jpeg" type="image/x-icon">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ 
+  <link rel="stylesheet" href="https://cdn.datatables.net/1.10.25/css/jquery.dataTables.min.css">
+  <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+  <script src="https://cdn.datatables.net/1.10.25/js/jquery.dataTables.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      $('#customers').DataTable();
+    });
+  </script>
+  <style>
+    body {
+      font-family: "Lato", sans-serif;
+    }
+
+    /* Fixed sidenav, full height */
+    .sidenav {
+      height: 100%;
+      width: 250px;
+      position: fixed;
+      z-index: 1;
+      top: 0;
+      left: 0;
+      background-color: #111;
+      overflow-x: hidden;
+      padding-top: 20px;
+    }
+
+    /* Style the sidenav links and the dropdown button */
+    .sidenav a,
+    .dropdown-btn {
+      padding: 6px 8px 6px 16px;
+      text-decoration: none;
+      font-size: 20px;
+      color: #818181;
+      display: block;
+      border: none;
+      background: none;
+      width: 100%;
+      text-align: left;
+      cursor: pointer;
+      outline: none;
+    }
+
+    /* On mouse-over */
+    .sidenav a:hover,
+    .dropdown-btn:hover {
+      color: #f1f1f1;
+    }
+
+    /* Main content */
+    .main {
+      margin-left: 250px;
+      /* Same as the width of the sidenav */
+      font-size: 20px;
+      /* Increased text to enable scrolling */
+      padding: 0px 10px;
+    }
+
+    /* Add an active class to the active dropdown button */
+    .active {
+      background-color: green;
+      color: white;
+    }
+
+    /* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
+    .dropdown-container {
+      display: none;
+      background-color: #262626;
+      padding-left: 8px;
+    }
+
+    /* Optional: Style the caret down icon */
+    .fa-caret-down {
+      float: right;
+      padding-right: 8px;
+    }
+
+    /* Some media queries for responsiveness */
+    @media screen and (max-height: 450px) {
+      .sidenav {
+        padding-top: 15px;
+      }
+
+      .sidenav a {
+        font-size: 18px;
+      }
+    }
+
+    #customers {
+      font-family: Arial, Helvetica, sans-serif;
+      border-collapse: collapse;
+      width: 100%;
+    }
+
+    #customers td,
+    #customers th {
+      border: 1px solid #ddd;
+      padding: 8px;
+    }
+
+    #customers tr:nth-child(even) {
+      background-color: #f2f2f2;
+    }
+
+    #customers tr:hover {
+      background-color: #ddd;
+    }
+
+    #customers th {
+      padding-top: 12px;
+      padding-bottom: 12px;
+      text-align: left;
+      background-color: #04AA6D;
+      color: white;
+    }
+
+    .blinking {
+      animation: blinkingText 1.2s infinite;
+    }
+
+    @keyframes blinkingText {
+      0% {
+        color: #000;
+      }
+
+      49% {
+        color: #000;
+      }
+
+      60% {
+        color: transparent;
+      }
+
+      99% {
+        color: transparent;
+      }
+
+      100% {
+        color: #000;
+      }
+    }
+
+    .button {
+
+      display: inline-block;
+      padding: 10px 20px;
+      font-size: 15px;
+      cursor: pointer;
+      text-align: center;
+      text-decoration: none;
+      outline: none;
+      color: #fff;
+      background-color: #04AA6D;
+      border: none;
+      border-radius: 15px;
+      box-shadow: 0 9px #999;
+    }
+
+    .button:hover {
+      background-color: #8e8d3e
+    }
+
+    .button:active {
+      background-color: #04AA6D;
+      box-shadow: 0 5px #666;
+      transform: translateY(4px);
+    }
+   
+.btn {
+  background-color: DodgerBlue;
+  border: none;
+  color: white;
+  padding: 12px 16px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 12px;
+}
+
+/* Darker background on mouse-over */
+.btn:hover {
+  background-color: RoyalBlue;
+  border-radius: 12px;
+}
+  </style>
+  <title>DPGC- Professional Works</title>
+</head>
+
+<body>
+
+  <div class="sidenav">
+    <img src="logodarwin.jpeg" width="250px" height="150 px">
+    <a href="welcome.html">Home</a>
+
+    
+    <button class="dropdown-btn">Plan Show
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-container">
+     <a href="https://docs.google.com/document/d/1Wlhb0M1PQefWueo0RwVHiEk-zZUM_BNYSIZdh_4Cpe4/edit?usp=sharing">STP POINTS</a>
+      <a href="pb.html">Professional Works</a>
+      <a href="fb.html">Awards</a>
+      <a href="inccal.html">Income Calculation</a>
+    </div>
+      <a href="plc.html">PLCs</a>
+    <button class="dropdown-btn">Media
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-container">
+        <a href="https://www.darwinpgc.com/gallery">Awards</a>
+       <a href="https://www.darwinpgc.com/newsroom">News</a>
+      
+     
+    </div>
+    <button class="dropdown-btn">Gallery
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-container">
+      <a href="https://www.ajayharinathsingh.com/index">Achievements</a>
+      <a href="https://www.ajayharinathsingh.com/awards">Awards</a>
+      <a href="https://www.ajayharinathsingh.com/media">Media</a>
+       <a href="https://www.ajayharinathsingh.com/news.html">News</a>
+    </div>
+    <button class="dropdown-btn">Company Profile
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-container">
+      <a href="https://drive.google.com/file/d/1Gs5bI9YcpUDqxCp0uOHDRHNVvhU0Epbf/view?usp=sharing">New</a>
+       <a href="https://www.dprl.in/images/refinery-direct-sale-ppt.pdf">Old</a>
+    </div>
+  
+    
+    <a href="legal.html">Legal</a>
+    <a href="https://www.youtube.com/c/DarwinPlatformGroupOfCompanies/videos">YouTube</a>
+    <br>
+    <br>
+    <a href="logout.html">LOG OUT</a>
+  </div>
+  <div class="main">
+    <MARQUEE>
+      <FONT COLOR="RED">Hello, Everybody! I (JAYANTA DUTTA) have accumulated many info from Google, Youtube, Press, Media, Magazine, Social Sites about Darwin Platform Group of Companies, and I share these info with you for presentation purpose only. </FONT>
+      <FONT COLOR="green"><b> DPGC</b></FONT>
+    </MARQUEE>
+     <br>
+    <br>
+    <h2><CENTER><U>Carrying The Great Legacy Forward</U></CENTER> </h2><BR><BR>
+    
+    <table id="customers" class="display" style="width:100%">
+      <thead>
+        <tr>
+          <th><center>Media Name</center></th>
+          <th><center>Published On</center></th>
+          <th><center>Heading</center></th>
+          <th><center>Link</center></th>
+          <th><center>Share<br>(Mobile Only)</center></th>
+
+        </tr>
+      </thead>
+      <tbody>
+       
+        <tr>
+            <td><center>The Week</center></td>
+            <td><center>2021/04/20</td></center>
+            <td><center>Creating a New Ecosystem for Retail with Cohesive Collaborations</td></center>
+            <td><center><a href="https://www.theweek.in/news/biz-tech/2021/04/20/creating-a-new-ecosystem-for-retail-with-cohesive-collaborations.html">Click Here</a></center></td>
+            <td><button onclick="window.open('whatsapp://send?text=https://www.theweek.in/news/biz-tech/2021/04/20/creating-a-new-ecosystem-for-retail-with-cohesive-collaborations.html')" class="btn"><i class="fa fa-share"></i> Share by WhatsApp</button></td>
+          
+        </tr>
+        
+          <tr>
+            <td><center>ANI News</center></td>
+            <td><center>2021/07/24</td></center>
+             <td><center>DEURASIA AIF poised to raise 600 crores to accelerate Retail, Healthtech, Agritech, and Infrastructure</td></center>
+            <td><center><a href="https://www.aninews.in/news/business/business/deurasia-aif-poised-to-raise-600-crores-to-accelerate-retail-healthtech-agritech-and-infrastructure20210724140705/">Click Here</a></center></td>
+           <td><button onclick="window.open('whatsapp://send?text=https://www.aninews.in/news/business/business/deurasia-aif-poised-to-raise-600-crores-to-accelerate-retail-healthtech-agritech-and-infrastructure20210724140705/')" class="btn"><i class="fa fa-share"></i> Share by WhatsApp </button> </td>
+          
+          </tr>
+     <tr>
+            <td><center>India Today</center></td>
+            <td><center>2020/03/14</td></center>
+             <td><center>Lava (Son of Lord Rama)</td></center>
+            <td><center><a href="https://www.indiatoday.in/india-today-conclave/2020/sponsor-details?sponsor=1651619">Click Here</a></center></td>
+           <td><button onclick="window.open('whatsapp://send?text=https://www.indiatoday.in/india-today-conclave/2020/sponsor-details?sponsor=1651619')" class="btn"><i class="fa fa-share"></i> Share by WhatsApp </button> </td>
+          
+          </tr>
+     <tr>
+            <td><center>Local Khabar</center></td>
+            <td><center>2021/07/11</td></center>
+             <td><center>स्पेशलः नारेंद्र मोदी के बाद 2029 में भारत का अगला युवा प्रधानमंत्री?</td></center>
+            <td><center><a href="https://localkhabar.com/who-will-be-the-next-young-prime-minister-of-india/39313/">Click Here</a></center></td>
+           <td><button onclick="window.open('whatsapp://send?text=https://localkhabar.com/who-will-be-the-next-young-prime-minister-of-india/39313/')"class="btn"><i class="fa fa-share"></i> Share by WhatsApp </button> </td>
+          
+          </tr>
+    <tr>
+            <td><center>Global Prime News</center></td>
+            <td><center>2022/03/28</td></center>
+             <td><center>DPGC to become Associate Partner of the new T-20 Cricket franchise team- Lucknow Super Giants, and extend support to Haryana Hockey as lead sponsor for both men and women teams. </td></center>
+            <td><center><a href="https://globalprimenews.com/2022/03/28/darwin-platform-group-chairman-ajay-harinath-singh-enters-into-revival-plan-of-reliance-capital-submits-eoi-for-investment-on-personal-capacity/">Click Here</a></center></td>
+           <td><button onclick="window.open('whatsapp://send?text=https://globalprimenews.com/2022/03/28/darwin-platform-group-chairman-ajay-harinath-singh-enters-into-revival-plan-of-reliance-capital-submits-eoi-for-investment-on-personal-capacity/')"class="btn"><i class="fa fa-share"></i> Share by WhatsApp </button> </td>
+          
+          </tr>
+    <tr>
+            <td><center>Times Of India</center></td>
+            <td><center>2021/10/16</td></center>
+             <td><center>Bombay Times Fashion Week</td></center>
+            <td><center><a href="https://timesofindia.indiatimes.com/life-style/fashion/luxury/runway/bombay-times-fashion-week-bewitching-fashion-lovers-with-the-indian-charm/articleshow/87061482.cms">Click Here</a></center></td>
+           <td><button onclick="window.open('whatsapp://send?text=https://timesofindia.indiatimes.com/life-style/fashion/luxury/runway/bombay-times-fashion-week-bewitching-fashion-lovers-with-the-indian-charm/articleshow/87061482.cms')"class="btn"><i class="fa fa-share"></i> Share by WhatsApp </button> </td>
+          
+          </tr>
+<tr>
+            <td><center>Self Website</center></td>
+            <td><center></td></center>
+             <td><center>About Mr. Ajay Harinath Singh</td></center>
+            <td><center><a href="https://www.ajayharinathsingh.com/about">Click Here</a></center></td>
+           <td><button onclick="window.open('whatsapp://send?text=https://www.ajayharinathsingh.com/about')"class="btn"><i class="fa fa-share"></i> Share by WhatsApp </button> </td>
+          
+          </tr>
+    <tr>
+            <td><center>ANI News</center></td>
+            <td><center>2021/07/22</td></center>
+             <td><center>Huma Qureshi inaugurates Darwin Platform Groups's first store "DP Retail"</td></center>
+            <td><center><a href="https://www.aninews.in/news/business/business/huma-qureshi-inaugurates-darwin-platform-groupss-first-store-dp-retail20210722175501/">Click Here</a></center></td>
+           <td><button onclick="window.open('whatsapp://send?text=https://www.aninews.in/news/business/business/huma-qureshi-inaugurates-darwin-platform-groupss-first-store-dp-retail20210722175501/')"class="btn"><i class="fa fa-share"></i> Share by WhatsApp </button> </td>
+          
+          </tr>
+<tr>
+            <td><center>The Siasat Daily</center></td>
+            <td><center>2021/07/11</td></center>
+             <td><center>In Gandhi’s pocket borough, BJP to rope in businessman Ajay Harinath</td></center>
+            <td><center><a href="https://www.siasat.com/in-gandhis-pocket-borough-bjp-to-rope-in-businessman-ajay-harinath-2163106/">Click Here</a></center></td>
+           <td><button onclick="window.open('whatsapp://send?text=https://www.siasat.com/in-gandhis-pocket-borough-bjp-to-rope-in-businessman-ajay-harinath-2163106/')"class="btn"><i class="fa fa-share"></i> Share by WhatsApp </button> </td>
+          
+          </tr>
+<tr>
+            <td><center>Twitter</center></td>
+            <td><center>2021/02/15</td></center>
+             <td><center>Darwin Platform Ushers in New ERA with "ASHWAMEDH YAGNA" Aligns All Businesses with Age-Old Traditions, Legacy & Atmanirbhar Bharat</td></center>
+            <td><center><a href="https://twitter.com/aryan687/status/1361276445218066437">Click Here</a></center></td>
+           <td><button onclick="window.open('whatsapp://send?text=https://twitter.com/aryan687/status/1361276445218066437')"class="btn"><i class="fa fa-share"></i> Share by WhatsApp </button> </td>
+          
+          </tr>
+  <tr>
+            <td><center>ANI News</center></td>
+            <td><center>2019/11/06</td></center>
+             <td><center>After Jet Airways bidding, Darwin group of companies steps into the entertainment industry</td></center>
+            <td><center><a href="https://www.aninews.in/news/business/after-jet-airways-bidding-darwin-group-of-companies-steps-into-the-entertainment-industry20191106101751/">Click Here</a></center></td>
+           <td><button onclick="window.open('whatsapp://send?text=https://www.aninews.in/news/business/after-jet-airways-bidding-darwin-group-of-companies-steps-into-the-entertainment-industry20191106101751/')"class="btn"><i class="fa fa-share"></i> Share by WhatsApp </button> </td>
+          
+          </tr>
+<tr>
+            <td><center>The Print</center></td>
+            <td><center>2021/07/24</td></center>
+             <td><center>DEURASIA AIF poised to raise 600 crores to accelerate Retail, Healthtech, Agritech, and Infrastructure</td></center>
+            <td><center><a href="https://theprint.in/ani-press-releases/deurasia-aif-poised-to-raise-600-crores-to-accelerate-retail-healthtech-agritech-and-infrastructure/702213/">Click Here</a></center></td>
+           <td><button onclick="window.open('whatsapp://send?text=https://theprint.in/ani-press-releases/deurasia-aif-poised-to-raise-600-crores-to-accelerate-retail-healthtech-agritech-and-infrastructure/702213/')"class="btn"><i class="fa fa-share"></i> Share by WhatsApp </button> </td>
+          
+          </tr>
+<tr>
+            <td><center>Pune Mirror</center></td>
+            <td><center>2022/06/21</td></center>
+             <td><center>Darwin’s refineries wing bags contracts of 17 oil fields, looks at $1 bn foreign investments, ONGC.</td></center>
+            <td><center><a href="https://punemirror.com/pune/others/Darwin%E2%80%99s-refineries-wing-bags-contracts-of-17-oil-fields-lo/cid7876022.htm">Click Here</a></center></td>
+           <td><button onclick="window.open('whatsapp://send?text=https://punemirror.com/pune/others/Darwin%E2%80%99s-refineries-wing-bags-contracts-of-17-oil-fields-lo/cid7876022.htm')"class="btn"><i class="fa fa-share"></i> Share by WhatsApp </button> </td>
+          
+          </tr>
+ <tr>
+            <td><center>Hello Mumbai News</center></td>
+            <td><center>2020/03/04</td></center>
+             <td><center> Ajay Harinath Singh, Youth Business Icon, to spearhead new age Ashwamedh Yagna with dominant business connotation</td></center>
+            <td><center><a href="https://www.hellomumbainews.com/business_news/mumbai-new-india-to-organise-ashwamedha-yagna-to-attract-the-worlds-attention-ajay-harinath-singh-spearheads-the-event/">Click Here</a></center></td>
+           <td><button onclick="window.open('whatsapp://send?text=https://www.hellomumbainews.com/business_news/mumbai-new-india-to-organise-ashwamedha-yagna-to-attract-the-worlds-attention-ajay-harinath-singh-spearheads-the-event/')"class="btn"><i class="fa fa-share"></i> Share by WhatsApp </button> </td>
+          
+          </tr>
+<tr>
+            <td><center>ANI News</center></td>
+            <td><center>2019/05/20</td></center>
+             <td><center>Darwin Group confident of winning bid for Jet Airways</td></center>
+            <td><center><a href="https://www.aninews.in/news/business/darwin-group-confident-of-winning-bid-for-jet-airways20190520145035/">Click Here</a></center></td>
+           <td><button onclick="window.open('whatsapp://send?text=https://www.aninews.in/news/business/darwin-group-confident-of-winning-bid-for-jet-airways20190520145035/')"class="btn"><i class="fa fa-share"></i> Share by WhatsApp </button> </td>
+          
+          </tr>
+ <tr>
+            <td><center>Mid-Day</center></td>
+            <td><center>2021/07/22</td></center>
+            <td><center>Business Tycoon Ajay Harinath Singh gave 34,000 jobs to the youth of the nation at the time of Corona pandemic</td></center>
+            <td><center><a href="https://www.mid-day.com/lifestyle/infotainment/article/business-tycoon-ajay-harinath-singh-gave-34000-jobs-to-the-youth-of-the-nation-at-the-time-of-corona-pandemic-23184160">Click Here</a></center></td>
+           <td><button onclick="window.open('whatsapp://send?text=https://www.mid-day.com/lifestyle/infotainment/article/business-tycoon-ajay-harinath-singh-gave-34000-jobs-to-the-youth-of-the-nation-at-the-time-of-corona-pandemic-23184160')"class="btn"><i class="fa fa-share"></i> Share by WhatsApp </button> </td>
+            
+          </tr>
+         
+          <tr>
+            <td><center>Face-Book</center></td>
+            <td><center>2021/07/22</td></center>
+            <td><center>Ashwamedha Yagya is the one of the most royal rituals of Sanatan Dharma or Sarvatrik Dharma or Vaidik Dharma</td></center>
+            <td><center><a href="https://www.facebook.com/DarwinPlatformGroup/videos/ashvamedha-yagya-is-the-one-of-the-most-royal-rituals-of-sanatan-dharma-or-sarva/2829058120690661/">Click Here</a></center></td>
+           <td><button onclick="window.open('whatsapp://send?text=https://www.facebook.com/DarwinPlatformGroup/videos/ashvamedha-yagya-is-the-one-of-the-most-royal-rituals-of-sanatan-dharma-or-sarva/2829058120690661/')"class="btn"><i class="fa fa-share"></i> Share by WhatsApp </button> </td>
+            
+          </tr>
+ <tr>
+            <td><center>Power-Corridors</center></td>
+            <td><center>2020/09/15</td></center>
+            <td><center>Ashwamedh Yagya, Sukhio-30 & MIG Aircraft</td></center>
+            <td><center><a href="https://www.powercorridors.in/business-amp-economy/ajay-harinath-singh-a-true-humanitarian">Click Here</a></center></td>
+           <td><button onclick="window.open('whatsapp://send?text=https://www.powercorridors.in/business-amp-economy/ajay-harinath-singh-a-true-humanitarian')"class="btn"><i class="fa fa-share"></i> Share by WhatsApp </button> </td>
+            
+          </tr>
+ <tr>
+            <td><center>PNi</center></td>
+            <td><center>2020/09/01</td></center>
+            <td><center>Sarvodaya Co Operative Bnak</td></center>
+            <td><center><a href="https://www.pninews.com/sarvodaya-co-op-banks-silver-jubilee/">Click Here</a></center></td>
+           <td><button onclick="window.open('whatsapp://send?text=https://www.pninews.com/sarvodaya-co-op-banks-silver-jubilee/')"class="btn"><i class="fa fa-share"></i> Share by WhatsApp </button> </td>
+            
+          </tr>
+          <tr>
+            <td><center><a href="https://drive.google.com/file/d/1jDYN__5u7-F5F7nJGGCiXKAqrfU2HtK5/view?usp=sharing">Asia One</a></center></td>
+            <td><center>2020/07/01</td></center>
+            <td><center>AJAY HARINATH SINGH</td></center>
+            <td><center><a href="https://asiaone.co.in/ajay-harinath-singh/">Click Here</a></center></td>
+           <td><button onclick="window.open('whatsapp://send?text=https://asiaone.co.in/ajay-harinath-singh/')"class="btn"><i class="fa fa-share"></i> Share by WhatsApp </button> </td>
+            
+          </tr>
+         
+          <tr>
+            <td><center>The Economic Times</center></td>
+            <td><center>2019/05/15</td></center>
+            <td><center>Darwin Platform-Group SBI Caps discuss unsolicited bid for Jet Airways</td></center>
+            <td><center><a href="https://economictimes.indiatimes.com/industry/transportation/airlines-/-aviation/darwin-platform-group-sbi-caps-discuss-unsolicited-bid-for-jet-airways/articleshow/69341376.cms?from=mdr">Click Here</a></center></td>
+           <td><button onclick="window.open('whatsapp://send?text=https://economictimes.indiatimes.com/industry/transportation/airlines-/-aviation/darwin-platform-group-sbi-caps-discuss-unsolicited-bid-for-jet-airways/articleshow/69341376.cms?from=mdr')"class="btn"><i class="fa fa-share"></i> Share by WhatsApp </button> </td>
+            
+          </tr>
+          
+          <tr>
+            <td><center>Business Standard</center></td>
+            <td><center>2021/11/22</td></center>
+            <td><center>Darwin Platform group forays into e-mobility space; launches 3 e-scooters</td></center>
+
+            <td><center><a href="https://www.business-standard.com/article/companies/darwin-platform-group-forays-into-e-mobility-space-launches-3-e-scooters-121112201025_1.html">Click Here</a></center></td>
+           <td><button onclick="window.open('whatsapp://send?text=https://www.business-standard.com/article/companies/darwin-platform-group-forays-into-e-mobility-space-launches-3-e-scooters-121112201025_1.html')"class="btn"><i class="fa fa-share"></i> Share by WhatsApp </button> </td>
+            
+          </tr>
+<tr>
+            <td><center>Business Standard</center></td>
+            <td><center>2021/12/25</td></center>
+            <td><center>Darwin Platform Infrastructure wins financial bid for Lavasa Corporation</td></center>
+
+            <td><center><a href="https://www.business-standard.com/article/companies/darwin-platform-infrastructure-wins-financial-bid-for-lavasa-corporation-121122500057_1.html">Click Here</a></center></td>
+           <td><button onclick="window.open('whatsapp://send?text=https://www.business-standard.com/article/companies/darwin-platform-infrastructure-wins-financial-bid-for-lavasa-corporation-121122500057_1.html')"class="btn"><i class="fa fa-share"></i> Share by WhatsApp </button> </td>
+            
+          </tr>
+<tr>
+            <td><center>People Matters</center></td>
+            <td><center>2021/05/13</td></center>
+            <td><center>Darwin Platform Group aims to create 4Mn direct employment across the nation</td></center>
+
+            <td><center><a href="https://www.peoplematters.in/news/employee-relations/darwin-platform-group-aims-to-create-4mn-direct-employment-across-the-nation-29325">Click Here</a></center></td>
+           <td><button onclick="window.open('whatsapp://send?text=https://www.peoplematters.in/news/employee-relations/darwin-platform-group-aims-to-create-4mn-direct-employment-across-the-nation-29325')"class="btn"><i class="fa fa-share"></i> Share by WhatsApp </button> </td>
+            
+          </tr>
+<tr>
+            <td><center>Uni Varta</center></td>
+            <td><center>2022/06/17</td></center>
+            <td><center>One Billion Dollars to be invested in Darwin Platform, ONGC.</td></center>
+
+            <td><center><a href="http://www.univarta.com/one-billion-dollars-to-be-invested-in-darwin-platform/business/news/2760054.html">Click Here</a></center></td>
+           <td><button onclick="window.open('whatsapp://send?text=http://www.univarta.com/one-billion-dollars-to-be-invested-in-darwin-platform/business/news/2760054.html')"class="btn"><i class="fa fa-share"></i> Share by WhatsApp </button> </td>
+            
+          </tr>
+<tr>
+            <td><center>United News Of India</center></td>
+            <td><center>2022/06/17</td></center>
+            <td><center>Global oil gaints gear up to invest 1 bn in darwin platform groups 4 oil blocks awarded by ongc</td></center>
+
+            <td><center><a href="http://uniindia.com/global-oil-gaints-gear-up-to-invest-1-bn-in-darwin-platform-group-s-4-oil-blocks-awarded-by-ongc/business-economy/news/2760242.html">Click Here</a></center></td>
+           <td><button onclick="window.open('whatsapp://send?text=http://uniindia.com/global-oil-gaints-gear-up-to-invest-1-bn-in-darwin-platform-group-s-4-oil-blocks-awarded-by-ongc/business-economy/news/2760242.html')"class="btn"><i class="fa fa-share"></i> Share by WhatsApp </button> </td>
+            
+          </tr>
+<tr>
+            <td><center>Business Standard</center></td>
+            <td><center>2021/12/24</td></center>
+            <td><center>Mumbai's Darwin Platform Infra Ltd wins bid for Pune's Lavasa city</td></center>
+
+            <td><center><a href="https://www.business-standard.com/article/companies/mumbai-s-darwin-platform-infra-ltd-wins-bid-for-pune-s-lavasa-city-121122400956_1.html">Click Here</a></center></td>
+           <td><button onclick="window.open('whatsapp://send?text=https://www.business-standard.com/article/companies/mumbai-s-darwin-platform-infra-ltd-wins-bid-for-pune-s-lavasa-city-121122400956_1.html')"class="btn"><i class="fa fa-share"></i> Share by WhatsApp </button> </td>
+            
+          </tr>
+          <tr>
+            <td><center>The Economic Times</center></td>
+            <td><center>2022/04/24</td></center>
+            <td><center>DARWIN PLATFORM INDUSTRIES LIMITED</td></center>
+
+            <td><center><a href="https://economictimes.indiatimes.com/company/darwin-platform-industries-limited/U27310MH2012PLC236055">Click Here</a></center></td>
+           <td><button onclick="window.open('whatsapp://send?text=https://economictimes.indiatimes.com/company/darwin-platform-industries-limited/U27310MH2012PLC236055')"class="btn"><i class="fa fa-share"></i> Share by WhatsApp </button> </td>
+            
+          </tr>
+          <tr>
+            <td><center>Punekar News</center></td>
+            <td><center>2019/11/06</td></center>
+            <td><center>The Darwin platform Group, a 41000 Cr company to foray into entertainment industry</td></center>
+
+            <td><center><a href="https://www.punekarnews.in/the-darwin-platform-group-a-41000-cr-company-to-foray-into-entertainment-industry/">Click Here</a></center></td>
+           <td><button onclick="window.open('whatsapp://send?text=https://www.punekarnews.in/the-darwin-platform-group-a-41000-cr-company-to-foray-into-entertainment-industry/')"class="btn"><i class="fa fa-share"></i> Share by WhatsApp </button> </td>
+            
+          </tr>
+ <tr>
+            <td><center>India Today</center></td>
+            <td><center>2022/03/29</td></center>
+            <td><center>IPL 2022: Darwin Platform group partners with KL Rahul-led Lucknow Super Giants, sponsors team jersey</td></center>
+
+            <td><center><a href="https://www.indiatoday.in/sports/cricket/story/ipl-2022-darwin-platform-group-partners-with-kl-rahul-led-lucknow-super-giants-sponsors-team-jersey-1930901-2022-03-29">Click Here</a></center></td>
+           <td><button onclick="window.open('whatsapp://send?text=https://www.indiatoday.in/sports/cricket/story/ipl-2022-darwin-platform-group-partners-with-kl-rahul-led-lucknow-super-giants-sponsors-team-jersey-1930901-2022-03-29')"class="btn"><i class="fa fa-share"></i> Share by WhatsApp </button> </td>
+            
+          </tr>
+         
+          <tr>
+            <td><center>Business Standard</center></td>
+            <td><center>2020/04/03</td></center>
+            <td><center>Darwin Platform Group of Companies launches advanced and quick Covid Test Kit</td></center>
+
+            <td><center><a href="https://www.business-standard.com/article/news-ani/darwin-platform-group-of-companies-launches-advanced-and-quick-covid-test-kit-120040300645_1.html">Click Here</a></center></td>
+           <td><button onclick="window.open('whatsapp://send?text=https://www.business-standard.com/article/news-ani/darwin-platform-group-of-companies-launches-advanced-and-quick-covid-test-kit-120040300645_1.html')"class="btn"><i class="fa fa-share"></i> Share by WhatsApp </button> </td>
+            
+          </tr>
+          <tr>
+            <td><center>ANI News</center></td>
+            <td><center>2020/04/03</td></center>
+            <td><center>Darwin Platform Group of Companies launches advanced and quick Covid Test Kit</td></center>
+
+            <td><center><a href="https://www.aninews.in/news/business/darwin-platform-group-of-companies-launches-advanced-and-quick-covid-test-kit20200403140550/">Click Here</a></center></td>
+            <td><button onclick="window.open('whatsapp://send?text=https://www.aninews.in/news/business/darwin-platform-group-of-companies-launches-advanced-and-quick-covid-test-kit20200403140550/')"class="btn"><i class="fa fa-share"></i> Share by WhatsApp </button> </td>
+            
+          </tr>
+          <tr>
+            <td><center>The Economic Times</center></td>
+            <td><center>2021/02/05</td></center>
+            <td><center>Darwin Platform Group of companies forays into retail with 6 new stores</td></center>
+
+            <td><center><a href="https://economictimes.indiatimes.com/magazines/panache/darwin-platform-group-of-companies-forays-into-retail-with-6-new-stores/articleshow/80699710.cms">Click Here</a></center></td>
+           <td><button onclick="window.open('whatsapp://send?text=https://economictimes.indiatimes.com/magazines/panache/darwin-platform-group-of-companies-forays-into-retail-with-6-new-stores/articleshow/80699710.cms')"class="btn"><i class="fa fa-share"></i> Share by WhatsApp </button> </td>
+            
+          </tr>
+ <tr>
+            <td><center>The Economic Times</center></td>
+            <td><center>2021/11/22</td></center>
+            <td><center>Darwin Platform Group forays into e mobility space launches 3 E Scooters</td></center>
+
+            <td><center><a href="https://economictimes.indiatimes.com/industry/renewables/darwin-platform-group-forays-into-e-mobility-space-launches-3-e-scooters/articleshow/87852447.cms">Click Here</a></center></td>
+           <td><button onclick="window.open('whatsapp://send?text=https://economictimes.indiatimes.com/industry/renewables/darwin-platform-group-forays-into-e-mobility-space-launches-3-e-scooters/articleshow/87852447.cms')"class="btn"><i class="fa fa-share"></i> Share by WhatsApp </button> </td>
+            
+          </tr>
+ <tr>
+            <td><center>Times of India</center></td>
+            <td><center>2020/12/30</td></center>
+            <td><center>A fashionable extravaganza on the ramp, Bombay Times Fashion Week</td></center>
+
+            <td><center><a href="https://timesofindia.indiatimes.com/life-style/events/a-fashionable-extravaganza-on-the-ramp/articleshow/80023120.cms">Click Here</a></center></td>
+           <td><button onclick="window.open('whatsapp://send?text=https://timesofindia.indiatimes.com/life-style/events/a-fashionable-extravaganza-on-the-ramp/articleshow/80023120.cms')"class="btn"><i class="fa fa-share"></i> Share by WhatsApp </button> </td>
+            
+          </tr>
+<tr>
+            <td><center>The Economic Times</center></td>
+            <td><center>2021/10/13</td></center>
+            <td><center>DPGCS entrepreneurial vision will help the nations future</td></center>
+
+            <td><center><a href="https://economictimes.indiatimes.com/magazines/panache/dpgcs-entrepreneurial-vision-will-help-the-nations-future/articleshow/86982960.cms">Click Here</a></center></td>
+           <td><button onclick="window.open('whatsapp://send?text=https://economictimes.indiatimes.com/magazines/panache/dpgcs-entrepreneurial-vision-will-help-the-nations-future/articleshow/86982960.cms')"class="btn"><i class="fa fa-share"></i> Share by WhatsApp </button> </td>
+            
+          </tr>
+<tr>
+            <td><center>The Economic Times</center></td>
+            <td><center>2021/08/25</td></center>
+            <td><center>Darwin Platform commits Rs 1000 crore to expand retail business</td></center>
+
+            <td><center><a href="https://economictimes.indiatimes.com/industry/services/retail/darwin-platform-commits-rs-1000-crore-to-expand-retail-business/articleshow/85623332.cms">Click Here</a></center></td>
+           <td><button onclick="window.open('whatsapp://send?text=https://economictimes.indiatimes.com/industry/services/retail/darwin-platform-commits-rs-1000-crore-to-expand-retail-business/articleshow/85623332.cms')"class="btn"><i class="fa fa-share"></i> Share by WhatsApp </button> </td>
+            
+          </tr>
+<tr>
+            <td><center>The Economic Times</center></td>
+            <td><center>2021/11/24</td></center>
+            <td><center>Darwin EVAT fuels green mobility with battery powered 2 wheelers</td></center>
+
+            <td><center><a href="https://economictimes.indiatimes.com/magazines/panache/darwin-evat-fuels-green-mobility-with-battery-powered-2-wheelers/articleshow/87879921.cms">Click Here</a></center></td>
+           <td><button onclick="window.open('whatsapp://send?text=https://economictimes.indiatimes.com/magazines/panache/darwin-evat-fuels-green-mobility-with-battery-powered-2-wheelers/articleshow/87879921.cms')"class="btn"><i class="fa fa-share"></i> Share by WhatsApp </button> </td>
+            
+          </tr>
+<tr>
+            <td><center>The Economic Times</center></td>
+            <td><center>2021/05/04</td></center>
+            <td><center>Leading business houses gear up to take the initiative to fulfil the dream of Akhand Bharat</td></center>
+
+            <td><center><a href="https://economictimes.indiatimes.com/magazines/panache/leading-business-houses-gear-up-to-take-the-initiative-to-fulfil-the-dream-of-akhand-bharat/articleshow/82380531.cms">Click Here</a></center></td>
+           <td><button onclick="window.open('whatsapp://send?text=https://economictimes.indiatimes.com/magazines/panache/leading-business-houses-gear-up-to-take-the-initiative-to-fulfil-the-dream-of-akhand-bharat/articleshow/82380531.cms')"class="btn"><i class="fa fa-share"></i> Share by WhatsApp </button> </td>
+            
+          </tr>
+          <tr>
+            <td><center>SME Street</center></td>
+            <td><center>2021/06/26</td></center>
+            <td><center>Darwin Platform Group Developed Military Equipment Based on Molecular Nano Technology for Indian Armed Forces</td></center>
+
+            <td><center><a href="https://smestreet.in/infocus/manufacturing/dpgc-to-develop-prototypes-for-jackets-arms-and-systems-against-laser-guided-weapons/">Click Here</a></center></td>
+           <td><button onclick="window.open('whatsapp://send?text=https://smestreet.in/infocus/manufacturing/dpgc-to-develop-prototypes-for-jackets-arms-and-systems-against-laser-guided-weapons/')"class="btn"><i class="fa fa-share"></i> Share by WhatsApp </button> </td>
+            
+          </tr>
+          <tr>
+            <td><center>Force India</center></td>
+            <td><center>2021/07/10</td></center>
+            <td><center>DPGC Announces its Foray in Defence Manufacturing with Personal Protection Gear</td></center>
+
+            <td><center><a href="https://forceindia.net/dpgc-announces-foray-defence-manufacturing-personal-protection-gear/">Click Here</a></center></td>
+           <td><button onclick="window.open('whatsapp://send?text=https://forceindia.net/dpgc-announces-foray-defence-manufacturing-personal-protection-gear/')"class="btn"><i class="fa fa-share"></i> Share by WhatsApp </button> </td>
+            
+          </tr>
+          <tr>
+            <td><center>Social News</center></td>
+            <td><center>2021/06/27</td></center>
+            <td><center>Darwin Platform Group makes military equipment based on molecular nano technology</td></center>
+
+            <td><center><a href="https://www.socialnews.xyz/2021/06/27/darwin-platform-group-makes-military-equipment-based-on-molecular-nano-technology/">Click Here</a></center></td>
+           <td><button onclick="window.open('whatsapp://send?text=https://www.socialnews.xyz/2021/06/27/darwin-platform-group-makes-military-equipment-based-on-molecular-nano-technology/')"class="btn"><i class="fa fa-share"></i> Share by WhatsApp </button> </td>
+            
+          </tr>
+<tr>
+            <td><center>Pressnote</center></td>
+            <td><center>2020/03/05</td></center>
+            <td><center>Preparations for Maha Ashwamedha Yagya begin, 3 crore devotees will be present</td></center>
+
+            <td><center><a href="https://www.pressnote.in/Headlines_412206.html">Click Here</a></center></td>
+           <td><button onclick="window.open('whatsapp://send?text=https://www.pressnote.in/Headlines_412206.html')"class="btn"><i class="fa fa-share"></i> Share by WhatsApp </button> </td>
+            
+          </tr>
+          <tr>
+            <td><center>Argus News</center></td>
+            <td><center>2019/05/20</td></center>
+            <td><center>Darwin Platform Group makes military equipment based on molecular nano technology</td></center>
+
+            <td><center><a href="https://argusnews.in/article/national/darwin-platform-group-makes-military-equipment-based-on-molecular-nano-technology">Click Here</a></center></td>
+           <td><button onclick="window.open('whatsapp://send?text=https://argusnews.in/article/national/darwin-platform-group-makes-military-equipment-based-on-molecular-nano-technology')"class="btn"><i class="fa fa-share"></i> Share by WhatsApp </button> </td>
+            
+          </tr>
+          <tr>
+            <td><center>Punekar News</center></td>
+            <td><center>2021/06/27</td></center>
+            <td><center>Woxsen University, Darwin Platform Group announces path-breaking initiative; indigenously developed Military Equipment based on Molecular Nano Technology for Indian Armed Forces</td></center>
+
+            <td><center><a href="https://www.punekarnews.in/woxsen-university-darwin-platform-group-announces-path-breaking-initiative-indigenously-developed-military-equipment-based-on-molecular-nano-technology-for-indian-armed-forces/">Click Here</a></center></td>
+           <td><button onclick="window.open('whatsapp://send?text=https://www.punekarnews.in/woxsen-university-darwin-platform-group-announces-path-breaking-initiative-indigenously-developed-military-equipment-based-on-molecular-nano-technology-for-indian-armed-forces/')"class="btn"><i class="fa fa-share"></i> Share by WhatsApp </button> </td>
+            
+          </tr>
+          <tr>
+            <td><center>The Free Press Journal</center></td>
+            <td><center>2021/06/29</center></td>
+            <td><center>Woxsen University, Darwin Platform Group announces path-breaking initiative; indigenously developed Military Equipment based on Molecular Nano Technology for Indian Armed Forces</td></center>
+            <td><center><a href="https://www.freepressjournal.in/corporate-gallery/woxsen-university-darwin-platform-group-announces-path-breaking-initiative-indigenously-developed-military-equipment-based-on-molecular-nano-technology-for-indian-armed-forces">Click Here</a></center></td>
+           <td><button onclick="window.open('whatsapp://send?text=https://www.freepressjournal.in/corporate-gallery/woxsen-university-darwin-platform-group-announces-path-breaking-initiative-indigenously-developed-military-equipment-based-on-molecular-nano-technology-for-indian-armed-forces')"class="btn"><i class="fa fa-share"></i> Share by WhatsApp </button> </td>
+            
+          </tr>
+          <tr>
+            <td><center>United News Of India </center></td>
+            <td><center>2021/06/30</td></center>
+            <td><center>DPGC partners with Robotics Lab, to showcase developed military equipment based on MNT</center></td>
+
+            <td><center><a href="http://www.uniindia.com/dpgc-partners-with-robotics-lab-to-showcase-developed-military-equipment-based-on-mnt/business-economy/news/2435816.html">Click Here</a></center></td>
+           <td><button onclick="window.open('whatsapp://send?text=http://www.uniindia.com/dpgc-partners-with-robotics-lab-to-showcase-developed-military-equipment-based-on-mnt/business-economy/news/2435816.html')"class="btn"><i class="fa fa-share"></i> Share by WhatsApp </button> </td>
+            
+          </tr>
+          <tr>
+            <td><center>Business Standard</center></td>
+            <td><center>2020/01/25</center></td>
+            <td><center>Mumbai born Ajay Harinath Singh wins Champions of Change Award</td></center>
+            <td><center><a href="https://www.business-standard.com/article/news-ani/mumbai-born-ajay-harinath-singh-wins-champions-of-change-award-120012500586_1.html">Click Here</a></center></td>
+           <td><button onclick="window.open('whatsapp://send?text=https://www.business-standard.com/article/news-ani/mumbai-born-ajay-harinath-singh-wins-champions-of-change-award-120012500586_1.html')"class="btn"><i class="fa fa-share"></i> Share by WhatsApp </button> </td>
+            
+          </tr>
+          <tr>
+            <td><center>Financial Express</center></td>
+            <td><center>2021/06/30</td></center>
+            <td><center>New nano tech to make military equipment lighter & stronger</td></center>
+
+            <td><center><a href="https://www.financialexpress.com/industry/technology/stronger-lighter-new-nano-tech-to-make-military-equipment-lighter-stronger/2280936/">Click Here</a></center></td>
+           <td><button onclick="window.open('whatsapp://send?text=https://www.financialexpress.com/industry/technology/stronger-lighter-new-nano-tech-to-make-military-equipment-lighter-stronger/2280936/')"class="btn"><i class="fa fa-share"></i> Share by WhatsApp </button> </td>
+            
+          </tr>
+          <tr>
+            <td><center>India Tv News</center></td>
+            <td><center>2021/06/27</td></center>
+            <td><center>Darwin Platform Group makes military equipment based on molecular nano technology</td></center>
+
+            <td><center><a href="https://www.indiatvnews.com/science/darwin-platform-group-makes-military-equipment-based-on-molecular-nano-technology-715074">Click Here</a></center></td>
+           <td><button onclick="window.open('whatsapp://send?text=https://www.indiatvnews.com/science/darwin-platform-group-makes-military-equipment-based-on-molecular-nano-technology-715074')"class="btn"><i class="fa fa-share"></i> Share by WhatsApp </button> </td>
+            
+          </tr>
+  <tr>
+            <td><center>Deccan Chronicle</center></td>
+            <td><center>2019/08/27</td></center>
+            <td><center>Darwin Platform Group of Companies , primarily focusing on oil, MiGs, Sukhoi aircrafts and arms & ammunition.</td></center>
+
+            <td><center><a href="https://www.deccanchronicle.com/entertainment/television/270819/heres-how-ajay-harinath-singh-is-uplifting-society-through-entertainm.html">Click Here</a></center></td>
+           <td><button onclick="window.open('whatsapp://send?text=https://www.deccanchronicle.com/entertainment/television/270819/heres-how-ajay-harinath-singh-is-uplifting-society-through-entertainm.html')"class="btn"><i class="fa fa-share"></i> Share by WhatsApp </button> </td>
+            
+          </tr>
+ <tr>
+            <td><center>Pukar News</center></td>
+            <td><center>2019/11/06</td></center>
+            <td><center>Darwin Platform Group of Companies , primarily focusing on oil, MiGs, Sukhoi aircrafts and arms & ammunition.</td></center>
+
+            <td><center><a href="https://www.punekarnews.in/the-darwin-platform-group-a-41000-cr-company-to-foray-into-entertainment-industry/">Click Here</a></center></td>
+           <td><button onclick="window.open('whatsapp://send?text=https://www.punekarnews.in/the-darwin-platform-group-a-41000-cr-company-to-foray-into-entertainment-industry/')"class="btn"><i class="fa fa-share"></i> Share by WhatsApp </button> </td>
+            
+          </tr>
+<tr>
+            <td><center>Mid-Day</center></td>
+            <td><center>2019/06/22</td></center>
+            <td><center>Ajay Harinath Singh has also been associated with selling the Sukhoi 30 and MIG aircraft from Russia to other countries.</td></center>
+
+            <td><center><a href="https://www.mid-day.com/lifestyle/infotainment/article/business-tycoon-ajay-harinath-singh-gave-34000-jobs-to-the-youth-of-the-nation-at-the-time-of-corona-pandemic-23184160">Click Here</a></center></td>
+           <td><button onclick="window.open('whatsapp://send?text=https://www.mid-day.com/lifestyle/infotainment/article/business-tycoon-ajay-harinath-singh-gave-34000-jobs-to-the-youth-of-the-nation-at-the-time-of-corona-pandemic-23184160')"class="btn"><i class="fa fa-share"></i> Share by WhatsApp </button> </td>
+            
+          </tr>
+<tr>
+            <td><center>Business-Standard</center></td>
+            <td><center>2019/11/06</td></center>
+            <td><center>Darwin Platform Group of Companies, primarily focusing on oil, MiGs, Sukhoi aircraft and arms & ammunition.</td></center>
+
+            <td><center><a href="https://www.business-standard.com/article/news-ani/after-jet-airways-bidding-darwin-group-of-companies-steps-into-the-entertainment-industry-119110600275_1.html">Click Here</a></center></td>
+           <td><button onclick="window.open('whatsapp://send?text=https://www.business-standard.com/article/news-ani/after-jet-airways-bidding-darwin-group-of-companies-steps-into-the-entertainment-industry-119110600275_1.html')"class="btn"><i class="fa fa-share"></i> Share by WhatsApp </button> </td>
+            
+          </tr>
+          <tr>
+            <td><center>The Week</center></td>
+            <td><center>2021/05/19</td></center>
+            <td><center>The Pandemic Effects: Nation in Distress, Darwin Platform Group Mega Employment Scheme to Provide Employment to 4 Million People</center></td>
+            <td><center><a href="https://www.theweek.in/news/biz-tech/2021/05/19/The-Pandemic-Effects-Nation-in-Distress-Darwin-Platform-Group-Mega-Employment-Scheme-to-Provide-Employment-to-4-Million-People.html">Click Here</a></center></td>
+           <td><button onclick="window.open('whatsapp://send?text=https://www.theweek.in/news/biz-tech/2021/05/19/The-Pandemic-Effects-Nation-in-Distress-Darwin-Platform-Group-Mega-Employment-Scheme-to-Provide-Employment-to-4-Million-People.html')"class="btn"><i class="fa fa-share"></i> Share by WhatsApp </button> </td>
+            
+          </tr>
+          <tr>
+            <td><center>News Nation Tv</center></td>
+            <td><center>2021/07/11</td></center>
+            <td><center>BJP may include businessman Ajay Harinath in the party to break into Gandhi's stronghold</td></center>
+
+            <td><center><a href="https://www.newsnationtv.com/india/news/in-gandhi-pocket-borough-bjp-to-rope-in-buineman-ajay-harinath-193761.html">Click Here</a></center></td>
+           <td><button onclick="window.open('whatsapp://send?text=https://www.newsnationtv.com/india/news/in-gandhi-pocket-borough-bjp-to-rope-in-buineman-ajay-harinath-193761.html')"class="btn"><i class="fa fa-share"></i> Share by WhatsApp </button> </td>
+            
+          </tr>
+          <tr>
+            <td><center>Bollywood Helpline</center></td>
+            <td><center>2021/05/15</td></center>
+            <td><center>Business Tycoon Ajay Harinath Singh gives 34,000 jobs to the youth and 1,25000 more jobs will be given by December 31st 2021</td></center>
+
+            <td><center><a href="http://www.bollywoodhelpline.com/news-gossips/media-buzz/business-tycoon-ajay-harinath-singh-gives-34-000-jobs-to-the-youth-and-1-25000-more-jobs-will-be/60090">Click Here</a></center></td>
+           <td><button onclick="window.open('whatsapp://send?text=http://www.bollywoodhelpline.com/news-gossips/media-buzz/business-tycoon-ajay-harinath-singh-gives-34-000-jobs-to-the-youth-and-1-25000-more-jobs-will-be/60090')"class="btn"><i class="fa fa-share"></i> Share by WhatsApp </button> </td>
+            
+          </tr>
+          
+          <tr>
+            <td><center>Devdiscourse</center></td>
+            <td><center>2021-07-22</td></center>
+            <td><center>Huma Qureshi Inaugurates Darwin Platform Groups's First Store "DP Retail"</td></center>
+
+            <td><center><a href="https://www.devdiscourse.com/article/business/1661552-huma-qureshi-inaugurates-darwin-platform-groupss-first-store-dp-retail">Click Here</a></center></td>
+           <td><button onclick="window.open('whatsapp://send?text=https://www.devdiscourse.com/article/business/1661552-huma-qureshi-inaugurates-darwin-platform-groupss-first-store-dp-retail')"class="btn"><i class="fa fa-share"></i> Share by WhatsApp </button> </td>
+            
+          </tr>
+          <tr>
+            <td><center>Business Standard</center></td>
+            <td><center>2019/11/06</td></center>
+             <td><center>After Jet Airways bidding, Darwin group of companies steps into the entertainment industry</td></center>
+
+            <td><center><a href="https://www.business-standard.com/article/news-ani/after-jet-airways-bidding-darwin-group-of-companies-steps-into-the-entertainment-industry-119110600275_1.html">Click Here</a></center></td>
+           <td><button onclick="window.open('whatsapp://send?text=https://www.business-standard.com/article/news-ani/after-jet-airways-bidding-darwin-group-of-companies-steps-into-the-entertainment-industry-119110600275_1.html')"class="btn"><i class="fa fa-share"></i> Share by WhatsApp </button> </td>
+            
+          </tr>
+          <tr>
+            <td><center>The Economic Times</center></td>
+            <td><center>2021/04/15</center></td>
+            <td><center>Bid for Shipping Corporation of India</center></td>
+
+            <td><center><a href="https://m.economictimes.com/industry/transportation/shipping-/-transport/ajay-harinath-singh-aligns-darwin-platform-group-of-companies-with-governments-disinvestment-plans-after-air-india-now-submits-bid-for-shipping-corporation-of-india/articleshow/82078097.cms">Click Here</a></center></td>
+           <td><button onclick="window.open('whatsapp://send?text=https://m.economictimes.com/industry/transportation/shipping-/-transport/ajay-harinath-singh-aligns-darwin-platform-group-of-companies-with-governments-disinvestment-plans-after-air-india-now-submits-bid-for-shipping-corporation-of-india/articleshow/82078097.cms')"class="btn"><i class="fa fa-share"></i> Share by WhatsApp </button> </td>
+            
+          </tr>
+         <tr>
+            <td><center>The Indian Express</center></td>
+           <td><center>2021/12/25</td></center>
+           <td><center>Darwin Platform wins Lavasa city bid for Rs 1,814 crore</td></center>
+
+            <td><center><a href="https://indianexpress.com/article/business/companies/darwin-platform-wins-lavasa-city-bid-7689423/">Click Here</a></center></td>
+           <td><button onclick="window.open('whatsapp://send?text=https://indianexpress.com/article/business/companies/darwin-platform-wins-lavasa-city-bid-7689423/')"class="btn"><i class="fa fa-share"></i> Share by WhatsApp </button> </td>
+          </tr>
+
+          <tr>
+            <td><center>Forbes India</center></td>
+            <td><center>2019/11/13</td></center>
+            <td><center>Entrepreneur with a Purpose, Awards, CSR</td></center>
+
+            <td><center><a href="https://www.forbesindia.com/article/brand-connect/entrepreneur-with-a-purpose/56107/1">Click Here</a></center></td>
+           <td><button onclick="window.open('whatsapp://send?text=https://www.forbesindia.com/article/brand-connect/entrepreneur-with-a-purpose/56107/1')"class="btn"><i class="fa fa-share"></i> Share by WhatsApp </button> </td>
+          </tr>
+
+         <tr>
+            <td><center>Powercorridors</center></td>
+            <td><center>2020-09-15</td></center>
+            <td><center>Ajay Harinath Singh: A true Humanitarian</td></center>
+
+            <td><center><a href="http://www.powercorridors.in/business-amp-economy/1411">Click Here</a></center></td>
+           <td><button onclick="window.open('whatsapp://send?text=http://www.powercorridors.in/business-amp-economy/1411')"class="btn"><i class="fa fa-share"></i> Share by WhatsApp </button> </td>
+            
+          </tr>
+
+          <tr>
+            <td><center>Forbes India</center></td>
+            <td><center>2020/03/16</td></center>
+            <td><center>A man with a marshmallow heart, Son of Lord Rama,CSR, Awards</td></center>
+
+            <td><center><a href="https://www.forbesindia.com/article/brand-connect/a-man-with-a-marshmallow-heart/58263/1">Click Here</a></center></td>
+           <td><button onclick="window.open('whatsapp://send?text=https://www.forbesindia.com/article/brand-connect/a-man-with-a-marshmallow-heart/58263/1')"class="btn"><i class="fa fa-share"></i> Share by WhatsApp </button> </td>
+            
+          </tr>
+<tr>
+            <td><center>The Week</center></td>
+            <td><center>2021/05/19</td></center>
+            <td><center>Mr Ajay Harinath Singh who is a descendent of Lava (The Son of Lord Rama)- Ikshvaku clan</td></center>
+
+            <td><center><a href="https://www.theweek.in/news/biz-tech/2021/05/19/The-Pandemic-Effects-Nation-in-Distress-Darwin-Platform-Group-Mega-Employment-Scheme-to-Provide-Employment-to-4-Million-People.html">Click Here</a></center></td>
+           <td><button onclick="window.open('whatsapp://send?text=https://www.theweek.in/news/biz-tech/2021/05/19/The-Pandemic-Effects-Nation-in-Distress-Darwin-Platform-Group-Mega-Employment-Scheme-to-Provide-Employment-to-4-Million-People.html')"class="btn"><i class="fa fa-share"></i> Share by WhatsApp </button> </td>
+            
+          </tr>
+<tr>
+            <td><center>Power Corridors</center></td>
+            <td><center>2020/06/13</td></center>
+            <td><center>Carryingthe great legacy forwoar: Mr Ajay Harinath Singh</td></center>
+
+            <td><center><a href="https://www.powercorridors.in/business-amp-economy/carrying-the-great-legacy-forward-ajay-harinath-singh">Click Here</a></center></td>
+           <td><button onclick="window.open('whatsapp://send?text=https://www.powercorridors.in/business-amp-economy/carrying-the-great-legacy-forward-ajay-harinath-singh')"class="btn"><i class="fa fa-share"></i> Share by WhatsApp </button> </td>
+            
+          </tr>
+<tr>
+            <td><center>Power Corridors</center></td>
+            <td><center>2020/07/25</td></center>
+            <td><center>Mr Ajay Harinath Singh who is a descendent of Lava (The Son of Lord Rama)- Ikshvaku clan</td></center>
+
+            <td><center><a href="https://www.powercorridors.in/business-amp-economy/ajay-harinath-singh-marrying-entrepreneurship-with-philanthropy">Click Here</a></center></td>
+           <td><button onclick="window.open('whatsapp://send?text=https://www.powercorridors.in/business-amp-economy/ajay-harinath-singh-marrying-entrepreneurship-with-philanthropy')"class="btn"><i class="fa fa-share"></i> Share by WhatsApp </button> </td>
+            
+          </tr>
+
+        <tr>
+            <td><center>Financial Express</center></td>
+            <td><center>2022/03/29</td></center>
+            <td><center>Darwin Platform Group chairman bids for Reliance Capital in personal capacity</td></center>
+
+            <td><center><a href="https://www.financialexpress.com/industry/darwin-platform-group-chairman-bids-for-reliance-capital-in-personal-capacity/2474555/">Click Here</a></center></td>
+           <td><button onclick="window.open('whatsapp://send?text=https://www.financialexpress.com/industry/darwin-platform-group-chairman-bids-for-reliance-capital-in-personal-capacity/2474555/')"class="btn"><i class="fa fa-share"></i> Share by WhatsApp </button> </td>
+            
+        </tr>
+
+         <tr>
+            <td><center>The Free Press Journal</center></td>
+           <td><center>2021/03/11</td></center>
+           <td><center>Darwin Platform Group of Companies bids for Shipping Corporation of India</td></center>
+
+            <td><center><a href="https://www.freepressjournal.in/business/darwin-platform-group-of-companies-bids-for-shipping-corporation-of-india">Click Here</a></center></td>
+           <td><button onclick="window.open('whatsapp://send?text=https://www.freepressjournal.in/business/darwin-platform-group-of-companies-bids-for-shipping-corporation-of-india')"class="btn"><i class="fa fa-share"></i> Share by WhatsApp </button> </td>
+            
+          </tr>
+        <tr>
+            <td><center>Forbes India</center></td>
+            <td><center>2019/12/30</td></center>
+            <td><center>Made of Mettle: Ajay Harinath Singh, selling the Sukhoi 30 and MIG aircrafts from Russia to other countries,also owns an oilrig and refinery in East Europe, CSR, Oman Govt-11,000-megawatt.</td></center>
+
+            <td><center><a href="https://www.forbesindia.com/article/brand-connect/made-of-mettle-ajay-harinath-singh/56871/1">Click Here</a></center></td>
+           <td><button onclick="window.open('whatsapp://send?text=https://www.forbesindia.com/article/brand-connect/made-of-mettle-ajay-harinath-singh/56871/1')"class="btn"><i class="fa fa-share"></i> Share by WhatsApp </button> </td>
+            
+          </tr>
+          <tr>
+            <td><center>Pune Mirror</center></td>
+            <td><center>2022/04/08</td></center>
+            <td><center>DP Retail’s new policy to empower customers</td></center>
+
+            <td><center><a href="https://punemirror.com/pune/civic/DP-Retail%E2%80%99s-new-policy-to-empower-customers/cid7093872.htm">Click Here</a></center></td>
+           <td><button onclick="window.open('whatsapp://send?text=https://punemirror.com/pune/civic/DP-Retail%E2%80%99s-new-policy-to-empower-customers/cid7093872.htm')"class="btn"><i class="fa fa-share"></i> Share by WhatsApp </button> </td>
+            
+          </tr>
+        <tr>
+            <td><center>The Indian Express</center></td>
+            <td><center>2019/05/16</td></center>
+            <td><center>Darwin group offers to infuse L14,000 cr in jet airways</td></center>
+
+            <td><center><a href="https://www.newindianexpress.com/business/2019/may/16/darwin-group-offers-to-infuse-l14000-cr-in-jet-airways-1977593.html">Click Here</a></center></td>
+           <td><button onclick="window.open('whatsapp://send?text=https://www.newindianexpress.com/business/2019/may/16/darwin-group-offers-to-infuse-l14000-cr-in-jet-airways-1977593.html')"class="btn"><i class="fa fa-share"></i> Share by WhatsApp </button> </td>
+            
+          </tr>
+      </tfoot>
+    </table>
+
+
+    <br><br>
+    &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
+    <input type="button" class="button" value="Print Table" onclick="myApp.printTable()" />
+    &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
+    &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
+    &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
+    &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
+    &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
+    &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
+    &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
+    <input type="button" class="button" value="Print Table" onclick="myApp.printTable()" />
+    
+    </p>
+    <br><br>
+    <hr>
+    <p style="font-size: 10px;" align="right"><span class="blinking">Version 1.0.2</span></p>
+
+
+    <center>
+      <p style="font-size: 13px;">&copy;2021-22 All Rights Reserved by JAYANTA DUTTA (DPRL281051)</p>
+    </center>
+
+  </div>
+
+  <script src="dropdown.js"></script>
+
+</body>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('#sidebarCollapse').on('click', function () {
+            $('#sidebar').toggleClass('active');
+            $(this).toggleClass('active');
+        });
+    });
+</script>
+<script>
+  var myApp = new function () {
+    this.printTable = function () {
+      var customers = document.getElementById('customers');
+      var win = window.open('', '', 'height=700,width=700');
+      win.document.write(customers.outerHTML);
+      win.document.close();
+      win.print();
+    }
+  }
+</script>
+
+
+</html>

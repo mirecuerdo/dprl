@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  
+
+  
+  <link rel="shortcut icon" href="logodarwin.jpeg" type="image/x-icon">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <link rel="stylesheet" href="https://cdn.datatables.net/1.10.25/css/jquery.dataTables.min.css">
+  <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+  <script src="https://cdn.datatables.net/1.10.25/js/jquery.dataTables.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      $('#customers').DataTable();
+    });
+  </script>
+  <style>
+    body {
+      font-family: "Lato", sans-serif;
+    }
+
+    /* Fixed sidenav, full height */
+    .sidenav {
+      height: 100%;
+      width: 250px;
+      position: fixed;
+      z-index: 1;
+      top: 0;
+      left: 0;
+      background-color: #111;
+      overflow-x: hidden;
+      padding-top: 20px;
+    }
+
+    /* Style the sidenav links and the dropdown button */
+    .sidenav a,
+    .dropdown-btn {
+      padding: 6px 8px 6px 16px;
+      text-decoration: none;
+      font-size: 20px;
+      color: #818181;
+      display: block;
+      border: none;
+      background: none;
+      width: 100%;
+      text-align: left;
+      cursor: pointer;
+      outline: none;
+    }
+
+    /* On mouse-over */
+    .sidenav a:hover,
+    .dropdown-btn:hover {
+      color: #f1f1f1;
+    }
+
+    /* Main content */
+    .main {
+      margin-left: 250px;
+      /* Same as the width of the sidenav */
+      font-size: 20px;
+      /* Increased text to enable scrolling */
+      padding: 0px 10px;
+    }
+
+    /* Add an active class to the active dropdown button */
+    .active {
+      background-color: green;
+      color: white;
+    }
+
+    /* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
+    .dropdown-container {
+      display: none;
+      background-color: #262626;
+      padding-left: 8px;
+    }
+
+    /* Optional: Style the caret down icon */
+    .fa-caret-down {
+      float: right;
+      padding-right: 8px;
+    }
+
+    /* Some media queries for responsiveness */
+    @media screen and (max-height: 450px) {
+      .sidenav {
+        padding-top: 15px;
+      }
+
+      .sidenav a {
+        font-size: 18px;
+      }
+    }
+
+    #customers {
+      font-family: Arial, Helvetica, sans-serif;
+      border-collapse: collapse;
+      width: 100%;
+    }
+
+    #customers td,
+    #customers th {
+      border: 1px solid #ddd;
+      padding: 8px;
+    }
+
+    #customers tr:nth-child(even) {
+      background-color: #f2f2f2;
+    }
+
+    #customers tr:hover {
+      background-color: #ddd;
+    }
+
+    #customers th {
+      padding-top: 12px;
+      padding-bottom: 12px;
+      text-align: left;
+      background-color: #04AA6D;
+      color: white;
+    }
+
+    .blinking {
+      animation: blinkingText 1.2s infinite;
+    }
+
+    @keyframes blinkingText {
+      0% {
+        color: #000;
+      }
+
+      49% {
+        color: #000;
+      }
+
+      60% {
+        color: transparent;
+      }
+
+      99% {
+        color: transparent;
+      }
+
+      100% {
+        color: #000;
+      }
+    }
+
+    .button {
+
+      display: inline-block;
+      padding: 10px 20px;
+      font-size: 15px;
+      cursor: pointer;
+      text-align: center;
+      text-decoration: none;
+      outline: none;
+      color: #fff;
+      background-color: #04AA6D;
+      border: none;
+      border-radius: 15px;
+      box-shadow: 0 9px #999;
+    }
+
+    .button:hover {
+      background-color: #8e8d3e
+    }
+
+    .button:active {
+      background-color: #04AA6D;
+      box-shadow: 0 5px #666;
+      transform: translateY(4px);
+    }
+    .btn {
+  background-color: DodgerBlue;
+  border: none;
+  color: white;
+  padding: 12px 16px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 12px;
+}
+
+/* Darker background on mouse-over */
+.btn:hover {
+  background-color: RoyalBlue;
+  border-radius: 12px;
+}
+  </style>
+  <title>DPGC-Awards</title>
+</head>
+
+<body>
+
+  <div class="sidenav">
+    <img src="logodarwin.jpeg" width="250px" height="150 px">
+    <a href="welcome.html">Home</a>
+
+    
+    <button class="dropdown-btn">Plan Show
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-container">
+     <a href="https://docs.google.com/document/d/1Wlhb0M1PQefWueo0RwVHiEk-zZUM_BNYSIZdh_4Cpe4/edit?usp=sharing">STP POINTS</a>
+      <a href="pb.html">Professional Works</a>
+      <a href="fb.html">Awards</a>
+      <a href="inccal.html">Income Calculation</a>
+    </div>
+      <a href="plc.html">PLCs</a>
+    <button class="dropdown-btn">Media
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-container">
+        <a href="https://www.darwinpgc.com/gallery">Awards</a>
+       <a href="https://www.darwinpgc.com/newsroom">News</a>
+      
+     
+    </div>
+    <button class="dropdown-btn">Gallery
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-container">
+      <a href="https://www.ajayharinathsingh.com/index">Achievements</a>
+      <a href="https://www.ajayharinathsingh.com/awards">Awards</a>
+      <a href="https://www.ajayharinathsingh.com/media">Media</a>
+       <a href="https://www.ajayharinathsingh.com/news.html">News</a>
+    </div>
+    <button class="dropdown-btn">Company Profile
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-container">
+      <a href="https://drive.google.com/file/d/1Gs5bI9YcpUDqxCp0uOHDRHNVvhU0Epbf/view?usp=sharing">New</a>
+       <a href="https://www.dprl.in/images/refinery-direct-sale-ppt.pdf">Old</a>
+    </div>
+  
+    
+    <a href="legal.html">Legal</a>
+    <a href="https://www.youtube.com/c/DarwinPlatformGroupOfCompanies/videos">YouTube</a>
+    <br>
+    <br>
+    <a href="logout.html">LOG OUT</a>
+  </div>
+  <div class="main">
+    <MARQUEE>
+      <FONT COLOR="RED">Hello, Everybody! I (JAYANTA DUTTA) have accumulated many info from Google, Youtube, Press, Media, Magazine, Social Sites about Darwin Platform Group of Companies, and I share these info with you for presentation purpose only. </FONT>
+      <FONT COLOR="green"><b> DPGC</b></FONT>
+    </MARQUEE>
+    
+    
+
+ 
+    <br>
+    <br>
+    <h2><CENTER><U>Carrying The Great Legacy Forward</U></CENTER> </h2><BR><BR>
+    <table id="customers" class="display" style="width:100%">
+      <thead>
+        <tr>
+          <th><center>Year</center></th>
+          <th><center>Award Name</center></th>
+          <th><center>Link</center></th>
+          <th><center>Share<br>(Mobile Only)</center></th>
+
+        </tr>
+      </thead>
+      <tbody>
+       
+        
+         <tr>
+          <td><center>2019</center></td>
+          <td><center>MID-DAY SHOWBIZ AWARD</center></td>
+          <td><center><a href="https://in.pinterest.com/pin/ajay-harinath-singh-preeti-jhangiani-milind-gunaji-sandeep-khosla-at-midday-showbiz-icons-2019-awards--568438784217570333/">Click Here</a></center></td>
+         <td><center><button onclick="window.open('whatsapp://send?text=https://in.pinterest.com/pin/ajay-harinath-singh-preeti-jhangiani-milind-gunaji-sandeep-khosla-at-midday-showbiz-icons-2019-awards--568438784217570333/')" class="btn"><i class="fa fa-share"></i> Share by WhatsApp</button></center><td>
+          
+        </tr>
+         <tr>
+          <td><center>2019</center></td>
+          <td><center>ASIAONE YOUNG INDIAN ENTREPRENEUR AWARD</center></td>
+          <td><center><a href="https://twitter.com/asiaonemagazine/status/1178591066360045569">Click Here</a></center></td>
+          <td><center><button onclick="window.open('whatsapp://send?text=https://twitter.com/asiaonemagazine/status/1178591066360045569')" class="btn"><i class="fa fa-share"></i> Share by WhatsApp</button></center></td>
+          
+        </tr>
+        <tr>
+          <td><center>2020</center></td>
+          <td><center>Times Men Of The Year 2020 Award</center></td>
+          <td><center><a href="https://photogallery.indiatimes.com/awards/awards-and-honours/times-men-of-the-year-2020-award/articleshow/80641938.cms">Click Here</a></center></td>
+          <td><center><button onclick="window.open('whatsapp://send?text=https://photogallery.indiatimes.com/awards/awards-and-honours/times-men-of-the-year-2020-award/articleshow/80641938.cms')" class="btn"><i class="fa fa-share"></i> Share by WhatsApp</button></center></td>
+          
+        </tr>
+        <tr>
+          <td><center>2019</center></td>
+          <td><center>TIMES POWER WOMEN AND MEN WEST AWARD</center></td>
+          <td><center><a href="https://economictimes.indiatimes.com/magazines/panache/times-power-women-and-men-awards-honour-achievers-shilpa-shetty-ayushmann-khurrana-in-attendance/raise-a-toast/slideshow/70854662.cms">Click Here</a></center></td>
+          <td><center><button onclick="window.open('whatsapp://send?text=https://economictimes.indiatimes.com/magazines/panache/times-power-women-and-men-awards-honour-achievers-shilpa-shetty-ayushmann-khurrana-in-attendance/raise-a-toast/slideshow/70854662.cms')" class="btn"><i class="fa fa-share"></i> Share by WhatsApp</button></center></td>
+          
+        </tr>
+        <tr>
+          <td><center>2019</center></td>
+          <td><center>Champion Of Change 2019 Award</center></td>
+          <td><center><a href="https://in.pinterest.com/sunshinepress/ajay-harinath-singh-champion-of-change-2019/">Click Here</a></center></td>
+           <td><center><button onclick="window.open('whatsapp://send?text=https://in.pinterest.com/sunshinepress/ajay-harinath-singh-champion-of-change-2019/')" class="btn"><i class="fa fa-share"></i> Share by WhatsApp</button></center></td>
+        </tr>
+        
+        <tr>
+          <td><center>2020</center></td>
+          <td><center>ET Business Icons- West 2020</center></td>
+          <td><center><a href="https://timesofindia.indiatimes.com/entertainment/spotlight/et-business-icons-west-2020-celebrates-visionary-leaders-who-powered-their-businesses-to-scale-new-heights-of-success/et-business-icons-west-2020-celebrates-visionary-leaders-who-powered-their-businesses-to-scale-new-heights-of-success/photostory/73901336.cms">Click Here</a></center></td>
+        <td><center><button onclick="window.open('whatsapp://send?text=https://timesofindia.indiatimes.com/entertainment/spotlight/et-business-icons-west-2020-celebrates-visionary-leaders-who-powered-their-businesses-to-scale-new-heights-of-success/et-business-icons-west-2020-celebrates-visionary-leaders-who-powered-their-businesses-to-scale-new-heights-of-success/photostory/73901336.cms')" class="btn"><i class="fa fa-share"></i> Share by WhatsApp</button></center></td>
+        </tr>
+        
+        <tr>
+          <td><center>2019</center></td>
+          <td><center>Global Excellance Awards 2019</center></td>
+          <td><center><a href="https://www.darwinpgc.com/gallery#images-45">Click Here</a></center></td>
+           <td><center><button onclick="window.open('whatsapp://send?text=https://www.darwinpgc.com/gallery#images-45')" class="btn"><i class="fa fa-share"></i> Share by WhatsApp</button></center></td>
+        </tr>
+        
+        <tr>
+          <td><center>2020</center></td>
+          <td><center>Asiaone Greatest Brands & Leaders Asia & GCC 2019-20”</center></td>
+          <td><center><a href="https://www.youtube.com/watch?v=qGMKGrvxo14&t=122s">Click Here</a></center></td>
+           <td><center><button onclick="window.open('whatsapp://send?text=https://www.youtube.com/watch?v=qGMKGrvxo14&t=122s')" class="btn"><i class="fa fa-share"></i> Share by WhatsApp</button></center></td>
+        </tr>
+        
+         <tr>
+          <td><center>2019</center></td>
+          <td><center>Lifes Real Hero Award</center></td>
+          <td><center><a href="https://www.darwinpgc.com/gallery#images-47">Click Here</a></center></td>
+            <td><center><button onclick="window.open('whatsapp://send?text=https://www.darwinpgc.com/gallery#images-47')" class="btn"><i class="fa fa-share"></i> Share by WhatsApp</button></center></td>
+        </tr>
+        
+         <tr>
+          <td><center>2019</center></td>
+          <td><center>Times Leading Icon Award</center></td>
+          <td><center><a href="https://www.ajayharinathsingh.com/awards#gallery-12">Click Here</a></center></td>
+          <td><center><button onclick="window.open('whatsapp://send?text=https://www.ajayharinathsingh.com/awards#gallery-12')" class="btn"><i class="fa fa-share"></i> Share by WhatsApp</button></center></td>
+        </tr>
+   
+   
+          
+        
+      </tfoot>
+    </table>
+
+
+    <br><br>
+    &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
+    <input type="button" class="button" value="Print Table" onclick="myApp.printTable()" />
+    &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
+    &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
+    &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
+    &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
+    &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
+    &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
+    &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
+    <input type="button" class="button" value="Print Table" onclick="myApp.printTable()" />
+    
+    </p>
+    <br><br>
+    <hr>
+    <p style="font-size: 10px;" align="right"><span class="blinking">Version 1.0.2</span></p>
+
+
+    <center>
+      <p style="font-size: 13px;">&copy;2021-22 All Rights Reserved by JAYANTA DUTTA (DPRL281051)</p>
+    </center>
+
+  </div>
+
+  <script src="dropdown.js"></script>
+
+</body>
+
+<script>
+  var myApp = new function () {
+    this.printTable = function () {
+      var customers = document.getElementById('customers');
+      var win = window.open('', '', 'height=700,width=700');
+      win.document.write(customers.outerHTML);
+      win.document.close();
+      win.print();
+    }
+  }
+</script>
+
+
+</html>

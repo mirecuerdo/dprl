@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  
+
+  
+  <link rel="shortcut icon" href="logodarwin.jpeg" type="image/x-icon">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <link rel="stylesheet" href="https://cdn.datatables.net/1.10.25/css/jquery.dataTables.min.css">
+  <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+  <script src="https://cdn.datatables.net/1.10.25/js/jquery.dataTables.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      $('#customers').DataTable();
+    });
+  </script>
+  <style>
+    body {
+      font-family: "Lato", sans-serif;
+    }
+
+    /* Fixed sidenav, full height */
+    .sidenav {
+      height: 100%;
+      width: 250px;
+      position: fixed;
+      z-index: 1;
+      top: 0;
+      left: 0;
+      background-color: #111;
+      overflow-x: hidden;
+      padding-top: 20px;
+    }
+
+    /* Style the sidenav links and the dropdown button */
+    .sidenav a,
+    .dropdown-btn {
+      padding: 6px 8px 6px 16px;
+      text-decoration: none;
+      font-size: 20px;
+      color: #818181;
+      display: block;
+      border: none;
+      background: none;
+      width: 100%;
+      text-align: left;
+      cursor: pointer;
+      outline: none;
+    }
+
+    /* On mouse-over */
+    .sidenav a:hover,
+    .dropdown-btn:hover {
+      color: #f1f1f1;
+    }
+
+    /* Main content */
+    .main {
+      margin-left: 250px;
+      /* Same as the width of the sidenav */
+      font-size: 20px;
+      /* Increased text to enable scrolling */
+      padding: 0px 10px;
+    }
+
+    /* Add an active class to the active dropdown button */
+    .active {
+      background-color: green;
+      color: white;
+    }
+
+    /* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
+    .dropdown-container {
+      display: none;
+      background-color: #262626;
+      padding-left: 8px;
+    }
+
+    /* Optional: Style the caret down icon */
+    .fa-caret-down {
+      float: right;
+      padding-right: 8px;
+    }
+
+    /* Some media queries for responsiveness */
+    @media screen and (max-height: 450px) {
+      .sidenav {
+        padding-top: 15px;
+      }
+
+      .sidenav a {
+        font-size: 18px;
+      }
+    }
+
+    #customers {
+      font-family: Arial, Helvetica, sans-serif;
+      border-collapse: collapse;
+      width: 100%;
+    }
+
+    #customers td,
+    #customers th {
+      border: 1px solid #ddd;
+      padding: 8px;
+    }
+
+    #customers tr:nth-child(even) {
+      background-color: #f2f2f2;
+    }
+
+    #customers tr:hover {
+      background-color: #ddd;
+    }
+
+    #customers th {
+      padding-top: 12px;
+      padding-bottom: 12px;
+      text-align: left;
+      background-color: #04AA6D;
+      color: white;
+    }
+
+    .blinking {
+      animation: blinkingText 1.2s infinite;
+    }
+
+    @keyframes blinkingText {
+      0% {
+        color: #000;
+      }
+
+      49% {
+        color: #000;
+      }
+
+      60% {
+        color: transparent;
+      }
+
+      99% {
+        color: transparent;
+      }
+
+      100% {
+        color: #000;
+      }
+    }
+
+    .button {
+
+      display: inline-block;
+      padding: 10px 20px;
+      font-size: 15px;
+      cursor: pointer;
+      text-align: center;
+      text-decoration: none;
+      outline: none;
+      color: #fff;
+      background-color: #04AA6D;
+      border: none;
+      border-radius: 15px;
+      box-shadow: 0 9px #999;
+    }
+
+    .button:hover {
+      background-color: #8e8d3e
+    }
+
+    .button:active {
+      background-color: #04AA6D;
+      box-shadow: 0 5px #666;
+      transform: translateY(4px);
+    }
+  </style>
+  <title>DPGC-PLCs</title>
+</head>
+
+<body>
+
+   <div class="sidenav">
+    <img src="logodarwin.jpeg" width="250px" height="150 px">
+    <a href="welcome.html">Home</a>
+
+    
+    <button class="dropdown-btn">Plan Show
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-container">
+     <a href="https://docs.google.com/document/d/1Wlhb0M1PQefWueo0RwVHiEk-zZUM_BNYSIZdh_4Cpe4/edit?usp=sharing">STP POINTS</a>
+      <a href="pb.html">Professional Works</a>
+      <a href="fb.html">Awards</a>
+      <a href="inccal.html">Income Calculation</a>
+    </div>
+      <a href="plc.html">PLCs</a>
+    <button class="dropdown-btn">Media
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-container">
+        <a href="https://www.darwinpgc.com/gallery">Awards</a>
+       <a href="https://www.darwinpgc.com/newsroom">News</a>
+      
+     
+    </div>
+    <button class="dropdown-btn">Gallery
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-container">
+      <a href="https://www.ajayharinathsingh.com/index">Achievements</a>
+      <a href="https://www.ajayharinathsingh.com/awards">Awards</a>
+      <a href="https://www.ajayharinathsingh.com/media">Media</a>
+       <a href="https://www.ajayharinathsingh.com/news.html">News</a>
+    </div>
+    <button class="dropdown-btn">Company Profile
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-container">
+      <a href="https://drive.google.com/file/d/1Gs5bI9YcpUDqxCp0uOHDRHNVvhU0Epbf/view?usp=sharing">New</a>
+       <a href="https://www.dprl.in/images/refinery-direct-sale-ppt.pdf">Old</a>
+    </div>
+  
+    
+    <a href="legal.html">Legal</a>
+    <a href="https://www.youtube.com/c/DarwinPlatformGroupOfCompanies/videos">YouTube</a>
+    <br>
+    <br>
+    <a href="logout.html">LOG OUT</a>
+  </div>
+  <div class="main">
+    <MARQUEE>
+      <FONT COLOR="RED">Hello, Everybody! I (JAYANTA DUTTA) have accumulated many info from Google, Youtube, Press, Media, Magazine, Social Sites about Darwin Platform Group of Companies, and I share these info with you for presentation purpose only. </FONT>
+      <FONT COLOR="green"><b> DPGC</b></FONT>
+    </MARQUEE>
+    
+    
+
+ 
+    <br>
+    <br>
+    <h2><CENTER><U>LIST OF ALL LIMITED COMPANIES OF DPGC</U></CENTER> </h2><BR><BR>
+    <table id="customers" class="display" style="width:100%">
+      <thead>
+        <tr>
+          <th><center>Company Name</center></th>
+          <th><center>CIN</center></th>
+          <th>Authorised Capital(Rs)</th>
+          <th>Paid up Capital(Rs)</th>
+          <th>Date of Incorporation<br>
+          (YYYY/MM/DD)</th>
+          <th><center>Registered Address</center></th>
+
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><a href="dpppvt.pdf">DARWIN PLATFORM PETROCHEMICALS PRIVATE LIMITED</a></td>
+          <td>U24290MH2021PTC368115</td>
+          <td>1000000</td>
+          <td>1000000</td>
+          <td>2021/09/24</td>
+          <td>Unit No 127, H Bldg, Ansa Industrial Est Saki Vihar Road,Sakinaka, Andheri (E) Mumbai Mumbai City MH 400072 IN</td>
+        </tr>
+        <tr>
+          <td><a href="dpsfsl.pdf">DARWIN PLATFORM SECURITY AND FACILITIES
+SERVICES LIMITED</a></td>
+          <td>U74999MH2022PLC374417</td>
+          <td>500000</td>
+          <td>500000</td>
+          <td>2022/01/05</td>
+          <td>Unit No 127,H Wing, Ansa Industrial Area Sakinaka,
+Andheri (East) Mumbai Mumbai City MH 400072 IN
+</td>
+        </tr>
+         <tr>
+          <td><a href="dpalfil.pdf">DARWIN PLATFORM AIRCRAFT LEASING AND
+FINANCING IFSC LIMITED</a></td>
+          <td>U67100GJ2021PLC127066</td>
+          <td>500000</td>
+          <td>500000</td>
+          <td>2021/11/08</td>
+          <td>Unit No 1603, 16th Floor, Signature Block 13B, Zone-1,
+Gift Sez Gandhinagar GJ 382355 IN</td>
+        </tr>
+        <tr>
+          <td><a href="mca21_DARWIN PLATFORM REFINERIES LIMITED.pdf">DARWIN PLATFORM REFINERIES LIMITED</a></td>
+          <td>U11100MH2012PLC235676<br>
+            <a href="https://dprl.in/">Website</a></td>
+          <td>500000</td>
+          <td>500000</td>
+          <td>2012/09/13</td>
+          <td>H-WING, UNIT NO. 127, ANSA INDUSTRIAL ESTATE, SAKI VIHAR ROAD, SAKI NAKA, ANDHERI (EAST) Mumbai Mumbai City MH 400072 IN</td>
+        </tr>
+        <tr>
+          <td><a href="mca21_DARWIN PLATFORM SHIPPING LIMITED.pdf">DARWIN PLATFORM SHIPPING LIMITED</a></td>
+          <td>U61200MH2013PLC244808</td>
+          <td>500000</td>
+          <td>500000</td>
+          <td>2013/06/25</td>
+          <td>H-127, Ansa Industrial Estate, Saki Vihar Road, Sakinaka, Andheri (East) Mumbai Mumbai City MH 400072 IN</td>
+        </tr>
+        <tr>
+            <td><a href="mca21_DARWIN PLATFORM1 NEWS LIMITED.pdf">DARWIN PLATFORM1 NEWS LIMITED</a></td>
+            <td>U22222MH2012PLC231694</td>
+            <td>20000000</td>
+            <td>20000000</td>
+            <td>2012/05/31</td>
+            <td>H-WING, UNIT NO. 127, ANSA INDUSTRIAL ESTATE, SAKI VIHAR ROAD, SAKI NAKA, ANDHERI (EAST) Mumbai Mumbai City MH 400072 IN</td>
+          </tr>
+          <tr>
+            <td><a href="mca21_DARWIN PLATFORM HOSPITALITY LIMITED.pdf">DARWIN PLATFORM HOSPITALITY LIMITED</a></td>
+            <td>U55101MH2012PLC235395</td>
+            <td>500000</td>
+            <td>500000</td>
+            <td>2012/09/06</td>
+            <td>H-WING, UNIT NO. 127, ANSA INDUSTRIAL ESTATE, SAKI VIHAR ROAD, SAKI NAKA, ANDHERI (EAST) Mumbai Mumbai City MH 400072 IN</td>
+          </tr>
+          <tr>
+            <td><a href="mca21_DARWIN PLATFORM INDUSTRIES LIMITED.pdf">DARWIN PLATFORM INDUSTRIES LIMITED</a></td>
+            <td>U27310MH2012PLC236055</td>
+            <td>1000000</td>
+            <td>1000000</td>
+            <td>2012/09/21</td>
+            <td>H-WING, UNIT NO. 127, ANSA INDUSTRIAL ESTATE, SAKI VIHAR ROAD, SAKI NAKA, ANDHERI (EAST) Mumbai Mumbai City MH 400072 IN</td>
+          </tr>
+          <tr>
+            <td><a href="mca21_DARWIN PLATFORM INFORMATION TECHNOLOGIES LIMITED.pdf">DARWIN PLATFORM INFORMATION TECHNOLOGIES LIMITED</a></td>
+            <td>U72300MH2012PLC235504</td>
+            <td>500000</td>
+            <td>500000</td>
+            <td>2012/09/10</td>
+            <td>H-WING, UNIT NO. 127, ANSA INDUSTRIAL ESTATE, SAKI VIHAR ROAD, SAKI NAKA, ANDHERI (EAST) Mumbai Mumbai City MH 400072 IN</td>
+          </tr>
+          <tr>
+            <td><a href="mca21_DARWIN PLATFORM INFRASTRUCTURE LIMITED.pdf">DARWIN PLATFORM INFRASTRUCTURE LIMITED</a></td>
+            <td>U45400MH2010PLC211258</td>
+            <td>500000</td>
+            <td>500000</td>
+            <td>2010/12/22</td>
+            <td>127/H-Wing, Ansa Industrial Estate, Sakinaka, Andheri (East), Mumbai Mumbai City MH 400070 IN</td>
+          </tr>
+          <tr>
+            <td><a href="mca21_DARWIN PLATFORM LOGISTICS LIMITED.pdf">DARWIN PLATFORM LOGISTICS LIMITED</a></td>
+            <td>U74120MH2012PLC235420</td>
+            <td>5000000</td>
+            <td>5000000</td>
+            <td>2012/09/07</td>
+            <td>H-WING, UNIT NO. 127, ANSA INDUSTRIAL ESTATE, SAKI VIHAR ROAD, SAKI NAKA, ANDHERI (EAST) Mumbai Mumbai City MH 400072 IN</td>
+          </tr>
+          <tr>
+            <td><a href="mca21_DARWIN PLATFORM MONETARY FINANCIAL LIMITED.pdf">DARWIN PLATFORM MONETARY FINANCIAL LIMITED</a></td>
+            <td>U65990MH2020PLC343407</td>
+            <td>500000</td>
+            <td>500000</td>
+            <td>2020/08/06</td>
+            <td>H-WING, UNIT NO. 127, ANSA INDUSTRIAL ESTATE, SAKI VIHAR ROAD, SAKI NAKA, ANDHERI (EAST) Mumbai Mumbai City MH 400072 IN</td>
+          </tr>
+          
+          <tr>
+            <td><a href="mca21_DARWIN PLATFORM PHARMACEUTICALS LIMITED.pdf">	DARWIN PLATFORM PHARMACEUTICALS LIMITED</a></td>
+            <td>U85191MH2012PLC235261</td>
+            <td>500000</td>
+            <td>500000</td>
+            <td>2012/09/03</td>
+            <td>H-WING, UNIT NO. 127, ANSA INDUSTRIAL ESTATE, SAKI VIHAR ROAD, SAKI NAKA, ANDHERI (EAST) Mumbai Mumbai City MH 400072 IN</td>
+          </tr>
+          <tr>
+            <td><a href="mca21_DARWIN PLATFORM POWER LIMITED.pdf">	DARWIN PLATFORM POWER LIMITED</a></td>
+            <td>U40300MH2012PLC235674</td>
+            <td>500000</td>
+            <td>500000</td>
+            <td>2012/09/13</td>
+            <td>H-WING, UNIT NO. 127, ANSA INDUSTRIAL ESTATE, SAKI VIHAR ROAD, SAKI NAKA, ANDHERI (EAST) Mumbai Mumbai City MH 400072 IN</td>
+           </tr>
+
+          <tr>
+            <td><a href="mca21_DARWIN PLATFORM REALTY LIMITED.pdf">	DARWIN PLATFORM REALTY LIMITED</a></td>
+            <td>U70100MH2012PLC235265</td>
+            <td>500000</td>
+            <td>500000</td>
+             <td>2012/09/03</td>
+            <td>H-WING, UNIT NO. 127, ANSA INDUSTRIAL ESTATE, SAKI VIHAR ROAD, SAKI NAKA, ANDHERI (EAST) Mumbai Mumbai City MH 400072 IN</td>
+          </tr>
+          <tr>
+            <td><a href="mca21_DARWIN PLATFORM AIRLINES LIMITED.pdf">	DARWIN PLATFORM AIRLINES LIMITED</a></td>
+            <td>U62100MH2012PLC231687</td>
+            <td>20000000</td>
+            <td>20000000</td>
+             <td>2012/05/31</td>
+            <td>H-WING, UNIT NO. 127, ANSA INDUSTRIAL ESTATE, SAKI VIHAR ROAD, SAKI NAKA, ANDHERI (EAST) Mumbai Mumbai City MH 400072 IN</td>
+          </tr>
+          <tr>
+            <td><a href="mca21_DARWIN PLATFORM AUTOMOBILES LIMITED.pdf">	DARWIN PLATFORM AUTOMOBILES LIMITED</a></td>
+            <td>U34200MH2012PLC235498</td>
+            <td>500000</td>
+            <td>500000</td>
+             <td>2012/09/10</td>
+            <td>H-WING, UNIT NO. 127, ANSA INDUSTRIAL ESTATE, SAKI VIHAR ROAD, SAKI NAKA, ANDHERI (EAST) Mumbai Mumbai City MH 400072 IN</td>
+          </tr>
+          <tr>
+            <td><a href="mca21_DARWIN PLATFORM BLISS LECLAT CONCIERGE SERVICE LIMITED.pdf">	DARWIN PLATFORM BLISS LECLAT CONCIERGE SERVICE LIMITED</a></td>
+            <td>U74900MH2020PLC350808</td>
+            <td>500000</td>
+            <td>500000</td>
+             <td>2020/11/26</td>
+            <td>H/127 Ansa Industrial Estate Saki Vihar Road, Sakinaka, Andheri East Mumbai Mumbai City MH 400072 IN</td>
+          </tr>
+          <tr>
+            <td><a href="mca21_DARWIN PLATFORM CAPITAL LIMITED.pdf">	DARWIN PLATFORM CAPITAL LIMITED</a></td>
+            <td>U67120MH1996PLC098342</td>
+            <td>20000000</td>
+            <td>20000000</td>
+             <td>1996/03/22</td>
+            <td>Unit No.127, Bldg.-H, Ansa Industrial Estate, Saki Vihar Road, Sanki Naka, Andheri (East) Mumbai Mumbai City MH 400072 IN</td>
+          </tr>
+          <tr>
+            <td><a href="mca21_DARWIN PLATFORM CAR CAB TRADE LIMITED.pdf">	DARWIN PLATFORM CAR CAB TRADE LIMITED</a></td>
+            <td>U63000MH2020PLC342629</td>
+            <td>500000</td>
+            <td>500000</td>
+             <td>2020/07/25</td>
+            <td>H-WING, UNIT NO. 127,ANSA INDUSTRIAL EST SAKI VIHAR, SAKINAKA, ANDHERI (EAST) MUMBAI Mumbai City MH 400072 IN</td>
+          </tr>
+          <tr>
+            <td><a href="mca21_DARWIN PLATFORM HOLDINGS LIMITED.pdf">	DARWIN PLATFORM HOLDINGS LIMITED</a></td>
+            <td>U74999MH2010PLC201876</td>
+            <td>20000000</td>
+            <td>20000000</td>
+             <td>2010/04/08</td>
+            <td>H-WING, UNIT NO. 127,ANSA INDUSTRIAL EST SAKI VIHAR, SAKINAKA, ANDHERI (EAST) MUMBAI Mumbai City MH 400072 IN</td>
+          </tr>
+          <tr>
+            <td><a href="mca21_DARWIN PLATFORM GOLD AND MINING LIMITED.pdf">	DARWIN PLATFORM GOLD AND MINING LIMITED</a></td>
+            <td>U14220MH2010PLC211255</td>
+            <td>500000</td>
+            <td>500000</td>
+             <td>2010/12/22</td>
+            <td>127/H-Wing, Ansa Industrial Estate, Sakinaka, Andheri (East), Mumbai Mumbai City MH 400070 IN</td>
+          </tr>
+          <tr>
+            <td><a href="mca21_DARWIN PLATFORM DISTILLERIES AND BREWERIES LIMITED.pdf">	DARWIN PLATFORM DISTILLERIES AND BREWERIES LIMITED</a></td>
+            <td>U15122MH2012PLC236910</td>
+            <td>500000</td>
+            <td>500000</td>
+             <td>2012/10/17</td>
+            <td>H-WING, UNIT NO. 127, ANSA INDUSTRIAL ESTATE, SAKI VIHAR ROAD, SAKI NAKA, ANDHERI (EAST) MUMBAI MH 400072 IN</td>
+          </tr>
+          <tr>
+            <td><a href="mca21_DARWIN PLATFORM DEFENCE AVITRONICS LIMITED.pdf">	DARWIN PLATFORM DEFENCE AVITRONICS LIMITED</a></td>
+            <td>U29304MH2021PLC359344</td>
+            <td>50000000</td>
+            <td>50000000</td>
+             <td>2021/04/21</td>
+            <td>H-127, Ansa Industrial Estate, Sakinaka Opp Piknik Hotel SakiVihar Rd, Andheri E Mumbai Mumbai City MH 400072 IN</td>
+          </tr>
+          
+          <tr>
+            <td><a href="mca21_DARWIN PLATFORM FORCE LIMITED.pdf">	DARWIN PLATFORM FORCE LIMITED</a></td>
+            <td>U74999MH2020PLC344704</td>
+            <td>1000000</td>
+            <td>1000000</td>
+             <td>2020/08/26</td>
+            <td>127, H-WING, ANSA INDUSTRIAL ESTATE, SAKI VIHAR ROAD, SAKINAKA, ANDHERI EAST MUMBAI Mumbai City MH 400072 IN</td>
+          </tr>
+          <tr>
+            <td><a href="mca21_DARWIN PLATFORM MASS MEDIA LIMITED.pdf">	DARWIN PLATFORM MASS MEDIA LIMITED</a></td>
+            <td>U74900MH2010PLC211374</td>
+            <td>500000</td>
+            <td>500000</td>
+             <td>2010/12/26</td>
+            <td>127, H-WING, ANSA INDUSTRIAL ESTATE, SAKI VIHAR ROAD, SAKINAKA, ANDHERI EAST MUMBAI Mumbai City MH 400072 IN</td>
+          </tr>
+          
+        
+      </tfoot>
+    </table>
+
+
+    <br><br>
+    &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
+    <input type="button" class="button" value="Print Table" onclick="myApp.printTable()" />
+    &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
+    &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
+    &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
+    &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
+    &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
+    &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
+    &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
+    <input type="button" class="button" value="Print Table" onclick="myApp.printTable()" />
+    <br><br><br>
+    Note: You can search any company through <a href="https://www.mca.gov.in/mcafoportal/viewCompanyMasterData.do">Click Here.</a>
+    </p>
+    <br><br>
+    <hr>
+    <p style="font-size: 10px;" align="right"><span class="blinking">Version 1.0.2</span></p>
+
+
+    <center>
+      <p style="font-size: 13px;">&copy;2021-22 All Rights Reserved by JAYANTA DUTTA (DPRL281051)</p>
+    </center>
+
+  </div>
+
+  <script src="dropdown.js"></script>
+
+</body>
+
+<script>
+  var myApp = new function () {
+    this.printTable = function () {
+      var customers = document.getElementById('customers');
+      var win = window.open('', '', 'height=700,width=700');
+      win.document.write(customers.outerHTML);
+      win.document.close();
+      win.print();
+    }
+  }
+</script>
+
+
+</html>
